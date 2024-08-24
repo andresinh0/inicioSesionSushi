@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/logo2.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form action="/login" method="POST">
+            <div class="input-container">
+                <input type="text" name="username" placeholder="Usuario" required>
+                <img src="imagenes/userIcon.png" alt="Icono Usuario" class="icono-usuario">
+            </div>
+            <div class="input-container">
+                <input type="password" name="password" placeholder="Contraseña" id="password" required>
+                <img src="imagenes/mostrado.png" alt="Mostrar Contraseña" class="icono-contrasena" id="togglePassword">
+            </div>
+            <button type="submit">Ingresar</button>
+        </form>
+        <div class="additional-options">
+            <p>¿No tiene una cuenta? <a href="#registro">Crear una</a></p>
+            <p><a href="#recuperacion">¿No puede acceder a su cuenta?</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
